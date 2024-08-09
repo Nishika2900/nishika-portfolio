@@ -6,60 +6,74 @@
     <title>Nishika Asati - Data Analyst & Python Developer</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif; /* Font type */
-            color: #333; /* Text color */
-            background-color: #f4f4f4; /* Background color */
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #003366; /* Dark blue header background */
+            background-color: #4CAF50;
             color: white;
-            padding: 20px;
+            padding: 1rem;
             text-align: center;
         }
-        header h1 {
-            font-size: 2.4em; /* Headings size */
-            margin: 0;
-        }
-        header p {
-            font-size: 1.1em; /* Sub-headings size */
-            margin: 10px 0;
-        }
         .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 0 auto;
+        }
+        .projects, .skills {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h2 {
-            font-size: 2.1em; /* Headings size */
-            color: #003366; /* Dark blue for headings */
-            border-bottom: 2px solid #003366;
-            padding-bottom: 5px;
+            color: #4CAF50;
+            font-size: 2rem;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
         }
         h3 {
-            font-size: 1.7em; /* Sub-headings size */
-            color: #0056b3; /* Slightly lighter blue */
+            color: #333;
+            font-size: 1.5rem;
+            margin-top: 1rem;
         }
         p {
-            font-size: 1em; /* Normal text size */
+            font-size: 1rem;
             line-height: 1.6;
         }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 0.5rem 0;
+        }
         a {
-            color: #0099ff; /* Hyperlink color */
+            color: #4CAF50;
             text-decoration: none;
         }
         a:hover {
-            text-decoration: underline; /* Underline on hover */
-            color: #007acc; /* Slightly darker blue */
+            color: #45a049;
+            text-decoration: underline;
+        }
+        .skills ul, .projects ul {
+            padding-left: 20px;
+        }
+        .skills ul li ul {
+            padding-left: 20px;
+            list-style: disc;
         }
         footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #003366; /* Dark blue footer background */
+            background-color: #4CAF50;
             color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
@@ -67,44 +81,199 @@
     <header>
         <h1>Nishika Asati</h1>
         <p>Python Developer & Data Analyst</p>
+        <p>Bangalore | <a href="https://www.linkedin.com/in/nishikaasati2900" target="_blank">LinkedIn</a> | <a href="https://github.com/Nishika2900" target="_blank">GitHub</a> | <a href="mailto:nishikaasati@gmail.com">nishikaasati@gmail.com</a></p>
     </header>
     <div class="container">
-        <h2>Skills</h2>
-        <p><strong>Languages:</strong> Python, C, C++</p>
-        <p><strong>Data Analysis & Visualization:</strong> MATLAB, Matplotlib, Plotly, Numpy, Pandas, SciPy</p>
-        <p><strong>Other Skills:</strong> SQL, Regex, OpenCV, BeautifulSoup, Selenium, GUI & Web Development (PyQt5, HTML/CSS/JavaScript), PowerApps, Requests</p>
+        <div class="projects">
+            <h2>Projects</h2>
 
-        <h2>Experience</h2>
-        <h3>Python Data Automation Specialist</h3>
-        <p><strong>Company:</strong> Daimler Truck Innovation Center India, Bangalore</p>
-        <p><strong>Duration:</strong> Jun 2023 - Present</p>
-        <p>Independently optimized workflows by designing, implementing, and deploying Python and PyQt5 applications, boosting operational efficiency significantly.</p>
-        <p>Streamlined processes by engineering a non-machine learning chatbot, showcasing innovation and proactive automation, improving efficiency.</p>
-        <p>Developed intuitive solutions tailored to organizational needs through expertise expansion in PowerApps development.</p>
+            <p><strong>Netflix-Data Exploration and Visualization:</strong> <a href="https://github.com/Nishika2900/netflix-data-exploration" target="_blank">GitHub Repository</a></p>
+            <p>A comprehensive analysis and visualization of Netflix data using Python libraries. This project includes data cleaning, exploratory data analysis, and various visualizations to uncover trends and patterns.</p>
+            <p><strong>Skills Gained:</strong></p>
+            <ul>
+                <li>Data Analysis
+                    <ul>
+                        <li>Data Cleaning</li>
+                        <li>Exploratory Data Analysis (EDA)</li>
+                    </ul>
+                </li>
+                <li>Data Visualization
+                    <ul>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                    </ul>
+                </li>
+                <li>Trend Analysis</li>
+            </ul>
+            <p><strong>Skills from Resume:</strong></p>
+            <ul>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>Plotly</li>
+            </ul>
 
-        <h3>Engineering Intern</h3>
-        <p><strong>Company:</strong> Robotronix India Pvt. Ltd., Indore</p>
-        <p><strong>Duration:</strong> Jun 2023 - Oct 2023</p>
-        <p>Developed MATLAB program with GNU Octave for MPC and NMPC model analysis, improving data processing efficiency by 20%.</p>
-        <p>Collaborated across functions to exchange insights, mastering MATLAB basics within 3 months.</p>
-        <p>Utilized Python to enhance data analysis, extracting valuable insights and optimizing processing efficiency.</p>
+            <p><strong>Delhivery-Case-Study:</strong> <a href="https://github.com/Nishika2900/Delhivery-Case-Study" target="_blank">GitHub Repository</a></p>
+            <p>Feature engineering on Delhivery's data to enhance model performance and accuracy.</p>
+            <p><strong>Skills Gained:</strong></p>
+            <ul>
+                <li>Feature Engineering
+                    <ul>
+                        <li>Data Transformation</li>
+                        <li>Feature Selection</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Skills from Resume:</strong></p>
+            <ul>
+                <li>Python</li>
+                <li>Data Manipulation</li>
+            </ul>
 
-        <h2>Projects</h2>
-        <p><strong>Netflix-Data Exploration and Visualization:</strong> <a href="https://github.com/Nishika2900/netflix-data-exploration" target="_blank">GitHub Repository</a></p>
-        <p>Processed and managed raw Netflix data, ensuring accuracy, handling inconsistencies, and preparing it for analysis. Conducted exploratory analysis with descriptive statistics and created visualizations to identify trends, enhancing data-driven decision-making.</p>
+            <p><strong>Aerofit - Descriptive Statistics & Probability:</strong> <a href="https://github.com/Nishika2900/Aerofit-Descriptive-Statistics-Probability" target="_blank">GitHub Repository</a></p>
+            <p>A project that explores descriptive statistics and probability analysis on the Aerofit dataset, using Python and various data visualization libraries.</p>
+            <p><strong>Skills Gained:</strong></p>
+            <ul>
+                <li>Descriptive Statistics
+                    <ul>
+                        <li>Statistical Summaries</li>
+                        <li>Mean, Median, Mode</li>
+                    </ul>
+                </li>
+                <li>Probability Analysis
+                    <ul>
+                        <li>Probability Distributions</li>
+                        <li>Variance Analysis</li>
+                    </ul>
+                </li>
+                <li>Data Quality Management
+                    <ul>
+                        <li>Handling Missing Values</li>
+                        <li>Outlier Detection</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Skills from Resume:</strong></p>
+            <ul>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>SciPy</li>
+            </ul>
 
-        <p><strong>Aerofit - Descriptive Statistics & Probability:</strong> <a href="https://github.com/Nishika2900/Aerofit-Descriptive-Statistics-Probability" target="_blank">GitHub Repository</a></p>
-        <p>Conducted comprehensive descriptive statistics and probability analysis on the Aerofit dataset, identifying key variables' relationships. Managed a dataset with 180 entries, ensuring data quality by handling missing values and outliers.</p>
+            <p><strong>Walmart-Confidence Interval:</strong> <a href="https://github.com/Nishika2900/Walmart_CaseStudy" target="_blank">GitHub Repository</a></p>
+            <p>Analyzed transactional data to assess spending behavior, focusing on gender-based differences, leading to a 15% increase in targeted marketing effectiveness. Conducted data preparation, EDA, statistical analysis, and segmentation to derive insights.</p>
+            <p><strong>Skills Gained:</strong></p>
+            <ul>
+                <li>Data Analysis
+                    <ul>
+                        <li>Confidence Intervals</li>
+                        <li>Statistical Analysis</li>
+                    </ul>
+                </li>
+                <li>Segmentation</li>
+            </ul>
+            <p><strong>Skills from Resume:</strong></p>
+            <ul>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>SciPy</li>
+            </ul>
 
-        <p><strong>NLP FlipIt News:</strong> <a href="https://github.com/Nishika2900/NLP_FlipitNews_casestudy/tree/alpha" target="_blank">GitHub Repository</a></p>
-        <p>Developed an NLP-driven system to categorize 2,000+ news articles into predefined categories like politics and technology. Utilized text preprocessing techniques and feature extraction to enhance categorization accuracy.</p>
+            <p><strong>NLP FlipIt News:</strong> <a href="https://github.com/Nishika2900/NLP_FlipitNews_casestudy/tree/alpha" target="_blank">GitHub Repository</a></p>
+            <p>Developed an NLP-driven system to categorize 2,000+ news articles into predefined categories like politics and technology. Utilized text preprocessing techniques and feature extraction to enhance categorization accuracy.</p>
+            <p><strong>Skills Gained:</strong></p>
+            <ul>
+                <li>Natural Language Processing (NLP)
+                    <ul>
+                        <li>Text Preprocessing</li>
+                        <li>Feature Extraction</li>
+                        <li>Model Evaluation (Naive Bayes, TF-IDF)</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Skills from Resume:</strong></p>
+            <ul>
+                <li>Python</li>
+                <li>BeautifulSoup</li>
+                <li>Scikit-learn</li>
+            </ul>
 
-        <p><strong>Walmart-Confidence Interval:</strong> <a href="https://github.com/Nishika2900/Walmart_CaseStudy" target="_blank">GitHub Repository</a></p>
-        <p>Analyzed transactional data to assess spending behavior, focusing on gender-based differences, leading to a 15% increase in targeted marketing effectiveness. Conducted data preparation, EDA, statistical analysis, and segmentation to derive insights.</p>
-
-        <h2>Education</h2>
-        <p><strong>Scaler:</strong> Specialized in Data Science & Machine Learning (2024)</p>
-        <p><strong>Medicaps University:</strong> BE/B.Tech/BS (8.22 CGPA) (2022)</p>
+            <p><strong>YULU Case Study:</strong> <a href="https://github.com/Nishika2900/YULU_Case_Study" target="_blank">GitHub Repository</a></p>
+            <p>[Include a brief description of the project and its impact. This information can be filled in based on the specifics of the project.]</p>
+            <p><strong>Skills Gained:</strong></p>
+            <ul>
+                <li>[Main Skill]
+                    <ul>
+                        <li>[Sub-skill]</li>
+                        <li>[Sub-skill]</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Skills from Resume:</strong></p>
+            <ul>
+                <li>[Skills from Resume]</li>
+            </ul>
+        </div>
+        
+        <div class="skills">
+            <h2>Skills</h2>
+            <p><strong>Main Skills:</strong></p>
+            <ul>
+                <li>Programming Languages
+                    <ul>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>C++</li>
+                    </ul>
+                </li>
+                <li>Data Analysis
+                    <ul>
+                        <li>Data Cleaning</li>
+                        <li>Exploratory Data Analysis</li>
+                        <li>Statistical Analysis</li>
+                    </ul>
+                </li>
+                <li>Data Visualization
+                    <ul>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                        <li>Plotly</li>
+                    </ul>
+                </li>
+                <li>Machine Learning
+                    <ul>
+                        <li>Supervised Learning</li>
+                        <li>Unsupervised Learning</li>
+                        <li>Model Evaluation</li>
+                    </ul>
+                </li>
+                <li>Web Scraping
+                    <ul>
+                        <li>BeautifulSoup</li>
+                        <li>Scrapy</li>
+                    </ul>
+                </li>
+                <li>Data Engineering
+                    <ul>
+                        <li>Feature Engineering</li>
+                        <li>Data Transformation</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Skills from Resume:</strong></p>
+            <ul>
+                <li>Python</li>
+                <li>BeautifulSoup</li>
+                <li>Scikit-learn</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+                <li>SciPy</li>
+                <li>Plotly</li>
+            </ul>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 Nishika Asati. All rights reserved.</p>
