@@ -3,68 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishika Asati - Python Developer & Data Analyst</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nishika Asati - Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+        h1, h2, h3 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        p, li {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f9f9f9;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-left: 5px solid #007bff;
+            transition: all 0.3s ease;
+        }
+        li:hover {
+            background: #007bff;
+            color: #fff;
+            border-left: 5px solid #0056b3;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .contact-info a {
+            color: #333;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            color: #007bff;
+        }
+        .skills, .experience, .projects, .education {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Nishika Asati</h1>
-        <p>Python Developer & Data Analyst</p>
+
+    <div class="container">
         <div class="contact-info">
-            <p>Bangalore | 9179192010 | <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> | <a href="https://github.com/Nishika2900">GitHub</a> | <a href="mailto:nishikaasati@gmail.com">nishikaasati@gmail.com</a></p>
+            <div>
+                <h1>Nishika Asati</h1>
+                <p>Bangalore</p>
+            </div>
+            <div>
+                <p>9179192010</p>
+                <p><a href="https://github.com/Nishika2900" target="_blank">GitHub</a></p>
+                <p><a href="https://linkedin.com/in/nishikaasati2900" target="_blank">LinkedIn</a></p>
+                <p><a href="mailto:nishikaasati@gmail.com">nishikaasati@gmail.com</a></p>
+            </div>
         </div>
-    </header>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, C, C++</li>
-            <li><strong>Data Analysis & Visualization:</strong> MATLAB, Matplotlib, Plotly, Numpy, Pandas, SciPy</li>
-            <li><strong>Other Skills:</strong> SQL, Regex, OpenCv, BeautifulSoup, Selenium, GUI & Web Development (PyQt5, HTML/CSS/JavaScript), PowerApps, Requests</li>
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Python Data Automation Specialist - Daimler Truck Innovation Center India, Bangalore</h3>
-            <p><em>Jun 2023 - Present</em></p>
+        <div class="skills">
+            <h2>Skills</h2>
             <ul>
-                <li>Optimized workflows by designing, implementing, and deploying Python and PyQt5 applications, boosting operational efficiency.</li>
-                <li>Engineered a non-machine learning chatbot to streamline processes, showcasing innovation and proactive automation.</li>
-                <li>Expanded expertise in PowerApps development to develop tailored organizational solutions.</li>
+                <li><strong>Languages:</strong> Python, C, C++</li>
+                <li><strong>Data Analysis & Visualization:</strong> MATLAB, Matplotlib, Plotly, Numpy, Pandas, SciPy</li>
+                <li><strong>Other Skills:</strong> SQL, Regex, OpenCv, BeautifulSoup, Selenium, GUI & Web Development (PyQt5, HTML/CSS/JavaScript), PowerApps, Requests</li>
             </ul>
         </div>
-        <div class="experience-item">
-            <h3>Engineering Intern - Robotronix India Pvt. Ltd., Indore</h3>
-            <p><em>Jun 2023 - Oct 2023</em></p>
+
+        <div class="experience">
+            <h2>Experience</h2>
+            <h3>Python Data Automation Specialist</h3>
+            <p><strong>Daimler Truck Innovation Center India, Bangalore</strong> (Jun 2023 - Present)</p>
+            <ul>
+                <li>Optimized workflows by designing and deploying Python and PyQt5 applications, boosting operational efficiency significantly.</li>
+                <li>Engineered a non-machine learning chatbot, showcasing innovation and improving efficiency.</li>
+                <li>Expanded expertise in PowerApps development to create intuitive solutions tailored to organizational needs.</li>
+            </ul>
+
+            <h3>Engineering Intern</h3>
+            <p><strong>Robotronix India Pvt. Ltd., Indore</strong> (Jun 2023 - Oct 2023)</p>
             <ul>
                 <li>Developed MATLAB program with GNU Octave for MPC and NMPC model analysis, improving data processing efficiency by 20%.</li>
-                <li>Mastered MATLAB basics and enhanced Python data analysis skills within 3 months.</li>
+                <li>Collaborated across functions to exchange insights, mastering MATLAB basics within 3 months.</li>
+                <li>Utilized Python to enhance data analysis, extracting valuable insights and optimizing processing efficiency.</li>
             </ul>
         </div>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/Nishika2900/netflix-data-exploration" target="_blank">Netflix Data Exploration and Visualization</a></li>
-            <li><a href="https://github.com/Nishika2900/Aerofit-Descriptive-Statistics-Probability" target="_blank">Aerofit - Descriptive Statistics & Probability</a></li>
-            <li><a href="https://github.com/Nishika2900/NLP_FlipitNews_casestudy/tree/alpha" target="_blank">NLP FlipIt News</a></li>
-            <li><a href="https://github.com/Nishika2900/Walmart_CaseStudy" target="_blank">Walmart-Confidence Interval</a></li>
-        </ul>
-    </section>
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong><a href="https://github.com/Nishika2900/nishika-portfolio" target="_blank">nishika-portfolio</a></strong> - A portfolio website showcasing my resume and projects.</li>
+                <li><strong><a href="https://github.com/Nishika2900/Aerofit-Descriptive-Statistics-Probability" target="_blank">Aerofit-Descriptive-Statistics-Probability</a></strong> - A project exploring descriptive statistics and probability analysis on the Aerofit dataset using Python and various data visualization libraries.</li>
+                <li><strong><a href="https://github.com/Nishika2900/Walmart_CaseStudy" target="_blank">Walmart_CaseStudy</a></strong> - An analysis of transactional data to assess spending behavior and improve targeted marketing.</li>
+                <li><strong><a href="https://github.com/Nishika2900/NLP_FlipitNews_casestudy" target="_blank">NLP_FlipitNews_casestudy</a></strong> - A system to categorize news articles into predefined categories using NLP techniques.</li>
+                <li><strong><a href="https://github.com/Nishika2900/YULU_Case_Study" target="_blank">YULU_Case_Study</a></strong> - An analysis case study on the YULU platform.</li>
+                <li><strong><a href="https://github.com/Nishika2900/netflix-data-exploration" target="_blank">netflix-data-exploration</a></strong> - A comprehensive analysis and visualization of Netflix data using Python.</li>
+                <li><strong><a href="https://github.com/Nishika2900/Delhivery-Case-Study" target="_blank">Delhivery-Case-Study</a></strong> - A case study analyzing various aspects of the Delhivery platform.</li>
+            </ul>
+        </div>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Scaler</strong> - Specialized in Data Science & Machine Learning (2024)</li>
-            <li><strong>Medicaps University</strong> - BE/B.Tech/BS (2022) | 8.22 CGPA</li>
-        </ul>
-    </section>
+        <div class="education">
+            <h2>Education</h2>
+            <p><strong>Scaler</strong> (2024) - Specialized in Data Science & Machine Learning</p>
+            <p><strong>Medicaps University</strong> (2022) - BE/B.Tech/BS, 8.22 CGPA</p>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Nishika Asati</p>
-    </footer>
 </body>
 </html>
