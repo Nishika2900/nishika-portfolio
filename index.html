@@ -7,73 +7,62 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            color: #333;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
+            color: #333333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1em 0;
             text-align: center;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        a {
+            color: #666666;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #444444;
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            margin: auto;
+            padding: 2em 0;
         }
         .projects, .skills {
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 2em;
         }
-        h2 {
-            color: #4CAF50;
-            font-size: 2rem;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 0.5rem;
+        .project, .skill {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            padding: 1em;
+            margin-bottom: 1em;
         }
-        h3 {
-            color: #333;
-            font-size: 1.5rem;
-            margin-top: 1rem;
+        .project a {
+            color: #666666;
         }
-        p {
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            padding: 0.5rem 0;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #45a049;
-            text-decoration: underline;
-        }
-        .skills ul, .projects ul {
-            padding-left: 20px;
-        }
-        .skills ul li ul {
-            padding-left: 20px;
-            list-style: disc;
+        .project a:hover {
+            color: #444444;
         }
         footer {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #000000;
+            color: #ffffff;
             text-align: center;
-            padding: 1rem;
+            padding: 1em 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        .github-link {
+            float: right;
+            color: #666666;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -86,152 +75,118 @@
     <div class="container">
         <div class="projects">
             <h2>Projects</h2>
-
-            <p><strong>Netflix-Data Exploration and Visualization:</strong> <a href="https://github.com/Nishika2900/netflix-data-exploration" target="_blank">GitHub Repository</a></p>
-            <p>A comprehensive analysis and visualization of Netflix data using Python libraries. This project includes data cleaning, exploratory data analysis, and various visualizations to uncover trends and patterns.</p>
-            <p><strong>Skills Gained:</strong></p>
-            <ul>
-                <li>Data Analysis
-                    <ul>
-                        <li>Data Cleaning</li>
-                        <li>Exploratory Data Analysis (EDA)</li>
-                    </ul>
-                </li>
-                <li>Data Visualization
-                    <ul>
-                        <li>Matplotlib</li>
-                        <li>Seaborn</li>
-                    </ul>
-                </li>
-                <li>Trend Analysis</li>
-            </ul>
-            <p><strong>Skills from Resume:</strong></p>
-            <ul>
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
-                <li>Plotly</li>
-            </ul>
-
-            <p><strong>Delhivery-Case-Study:</strong> <a href="https://github.com/Nishika2900/Delhivery-Case-Study" target="_blank">GitHub Repository</a></p>
-            <p>Feature engineering on Delhivery's data to enhance model performance and accuracy.</p>
-            <p><strong>Skills Gained:</strong></p>
-            <ul>
-                <li>Feature Engineering
-                    <ul>
-                        <li>Data Transformation</li>
-                        <li>Feature Selection</li>
-                    </ul>
-                </li>
-            </ul>
-            <p><strong>Skills from Resume:</strong></p>
-            <ul>
-                <li>Python</li>
-                <li>Data Manipulation</li>
-            </ul>
-
-            <p><strong>Aerofit - Descriptive Statistics & Probability:</strong> <a href="https://github.com/Nishika2900/Aerofit-Descriptive-Statistics-Probability" target="_blank">GitHub Repository</a></p>
-            <p>A project that explores descriptive statistics and probability analysis on the Aerofit dataset, using Python and various data visualization libraries.</p>
-            <p><strong>Skills Gained:</strong></p>
-            <ul>
-                <li>Descriptive Statistics
-                    <ul>
-                        <li>Statistical Summaries</li>
-                        <li>Mean, Median, Mode</li>
-                    </ul>
-                </li>
-                <li>Probability Analysis
-                    <ul>
-                        <li>Probability Distributions</li>
-                        <li>Variance Analysis</li>
-                    </ul>
-                </li>
-                <li>Data Quality Management
-                    <ul>
-                        <li>Handling Missing Values</li>
-                        <li>Outlier Detection</li>
-                    </ul>
-                </li>
-            </ul>
-            <p><strong>Skills from Resume:</strong></p>
-            <ul>
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>NumPy</li>
-                <li>SciPy</li>
-            </ul>
-
-            <p><strong>Walmart-Confidence Interval:</strong> <a href="https://github.com/Nishika2900/Walmart_CaseStudy" target="_blank">GitHub Repository</a></p>
-            <p>Analyzed transactional data to assess spending behavior, focusing on gender-based differences, leading to a 15% increase in targeted marketing effectiveness. Conducted data preparation, EDA, statistical analysis, and segmentation to derive insights.</p>
-            <p><strong>Skills Gained:</strong></p>
-            <ul>
-                <li>Data Analysis
-                    <ul>
-                        <li>Confidence Intervals</li>
-                        <li>Statistical Analysis</li>
-                    </ul>
-                </li>
-                <li>Segmentation</li>
-            </ul>
-            <p><strong>Skills from Resume:</strong></p>
-            <ul>
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>SciPy</li>
-            </ul>
-
-            <p><strong>NLP FlipIt News:</strong> <a href="https://github.com/Nishika2900/NLP_FlipitNews_casestudy/tree/alpha" target="_blank">GitHub Repository</a></p>
-            <p>Developed an NLP-driven system to categorize 2,000+ news articles into predefined categories like politics and technology. Utilized text preprocessing techniques and feature extraction to enhance categorization accuracy.</p>
-            <p><strong>Skills Gained:</strong></p>
-            <ul>
-                <li>Natural Language Processing (NLP)
-                    <ul>
-                        <li>Text Preprocessing</li>
-                        <li>Feature Extraction</li>
-                        <li>Model Evaluation (Naive Bayes, TF-IDF)</li>
-                    </ul>
-                </li>
-            </ul>
-            <p><strong>Skills from Resume:</strong></p>
-            <ul>
-                <li>Python</li>
-                <li>BeautifulSoup</li>
-                <li>Scikit-learn</li>
-            </ul>
-
-            <p><strong>YULU Case Study:</strong> <a href="https://github.com/Nishika2900/YULU_Case_Study" target="_blank">GitHub Repository</a></p>
-            <p>[Include a brief description of the project and its impact. This information can be filled in based on the specifics of the project.]</p>
-            <p><strong>Skills Gained:</strong></p>
-            <ul>
-                <li>[Main Skill]
-                    <ul>
-                        <li>[Sub-skill]</li>
-                        <li>[Sub-skill]</li>
-                    </ul>
-                </li>
-            </ul>
-            <p><strong>Skills from Resume:</strong></p>
-            <ul>
-                <li>[Skills from Resume]</li>
-            </ul>
+            <div class="project">
+                <h3>Netflix Data Exploration and Visualization</h3>
+                <p>A comprehensive analysis and visualization of Netflix data using Python libraries. This project includes data cleaning, exploratory data analysis, and various visualizations to uncover trends and patterns in the dataset.</p>
+                <p><a href="https://github.com/Nishika2900/netflix-data-exploration" target="_blank" class="github-link">GitHub Repository</a></p>
+                <h4>Skills Gained:</h4>
+                <ul>
+                    <li>Data Cleaning</li>
+                    <li>Exploratory Data Analysis</li>
+                    <li>Data Visualization</li>
+                </ul>
+                <h4>Main Skills:</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                    <li>Plotly</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Delhivery Case Study</h3>
+                <p>Feature engineering on Delhivery's Data.</p>
+                <p><a href="https://github.com/Nishika2900/Delhivery-Case-Study" target="_blank" class="github-link">GitHub Repository</a></p>
+                <h4>Skills Gained:</h4>
+                <ul>
+                    <li>Feature Engineering</li>
+                    <li>Data Transformation</li>
+                </ul>
+                <h4>Main Skills:</h4>
+                <ul>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Aerofit - Descriptive Statistics & Probability</h3>
+                <p>A project that explores descriptive statistics and probability analysis on the Aerofit dataset, using Python and various data visualization libraries.</p>
+                <p><a href="https://github.com/Nishika2900/Aerofit-Descriptive-Statistics-Probability" target="_blank" class="github-link">GitHub Repository</a></p>
+                <h4>Skills Gained:</h4>
+                <ul>
+                    <li>Descriptive Statistics</li>
+                    <li>Probability Analysis</li>
+                </ul>
+                <h4>Main Skills:</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                    <li>SciPy</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Walmart Case Study</h3>
+                <p>Analyzed transactional data to assess spending behavior, focusing on gender-based differences. This analysis led to a 15% increase in targeted marketing effectiveness.</p>
+                <p><a href="https://github.com/Nishika2900/Walmart_CaseStudy" target="_blank" class="github-link">GitHub Repository</a></p>
+                <h4>Skills Gained:</h4>
+                <ul>
+                    <li>Exploratory Data Analysis</li>
+                    <li>Statistical Analysis</li>
+                    <li>Data Visualization</li>
+                </ul>
+                <h4>Main Skills:</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>NLP FlipIt News</h3>
+                <p>Developed an NLP-driven system to categorize 2,000+ news articles into predefined categories like politics and technology.</p>
+                <p><a href="https://github.com/Nishika2900/NLP_FlipitNews_casestudy/tree/alpha" target="_blank" class="github-link">GitHub Repository</a></p>
+                <h4>Skills Gained:</h4>
+                <ul>
+                    <li>Text Preprocessing</li>
+                    <li>Feature Extraction</li>
+                    <li>Model Evaluation (Naive Bayes, TF-IDF)</li>
+                </ul>
+                <h4>Main Skills:</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Scikit-learn</li>
+                    <li>BeautifulSoup</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>YULU Case Study</h3>
+                <p>This project involves analyzing a dataset related to bike-sharing usage for YULU. The goal is to gain insights from the data and build predictive models to understand and forecast bike demand.</p>
+                <p><a href="https://github.com/Nishika2900/YULU_Case_Study" target="_blank" class="github-link">GitHub Repository</a></p>
+                <h4>Skills Gained:</h4>
+                <ul>
+                    <li>Data Analysis</li>
+                    <li>Predictive Modeling</li>
+                </ul>
+                <h4>Main Skills:</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                </ul>
+            </div>
         </div>
-        
         <div class="skills">
             <h2>Skills</h2>
-            <p><strong>Main Skills:</strong></p>
+            <h3>Main Skills:</h3>
             <ul>
-                <li>Programming Languages
-                    <ul>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>C++</li>
-                    </ul>
-                </li>
                 <li>Data Analysis
                     <ul>
                         <li>Data Cleaning</li>
                         <li>Exploratory Data Analysis</li>
-                        <li>Statistical Analysis</li>
+                        <li>Feature Engineering</li>
                     </ul>
                 </li>
                 <li>Data Visualization
@@ -243,40 +198,29 @@
                 </li>
                 <li>Machine Learning
                     <ul>
-                        <li>Supervised Learning</li>
-                        <li>Unsupervised Learning</li>
+                        <li>Predictive Modeling</li>
                         <li>Model Evaluation</li>
+                        <li>Scikit-learn</li>
                     </ul>
                 </li>
-                <li>Web Scraping
+                <li>Natural Language Processing (NLP)
                     <ul>
-                        <li>BeautifulSoup</li>
-                        <li>Scrapy</li>
+                        <li>Text Preprocessing</li>
+                        <li>Feature Extraction</li>
+                        <li>Model Evaluation (Naive Bayes, TF-IDF)</li>
                     </ul>
                 </li>
-                <li>Data Engineering
+                <li>Python Programming
                     <ul>
-                        <li>Feature Engineering</li>
-                        <li>Data Transformation</li>
+                        <li>Data Manipulation with Pandas</li>
+                        <li>Web Scraping with BeautifulSoup</li>
                     </ul>
                 </li>
-            </ul>
-            <p><strong>Skills from Resume:</strong></p>
-            <ul>
-                <li>Python</li>
-                <li>BeautifulSoup</li>
-                <li>Scikit-learn</li>
-                <li>Pandas</li>
-                <li>NumPy</li>
-                <li>Matplotlib</li>
-                <li>Seaborn</li>
-                <li>SciPy</li>
-                <li>Plotly</li>
             </ul>
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 Nishika Asati. All rights reserved.</p>
+        <p>&copy; 2024 Nishika Asati</p>
     </footer>
 </body>
 </html>
