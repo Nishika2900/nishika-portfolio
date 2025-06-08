@@ -4,273 +4,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishika Asati's Portfolio</title>
+    <meta name="description" content="Portfolio of Nishika Asati, a Data Scientist and Python Developer specializing in machine learning, data analysis, and automation. View my projects and professional experience.">
+    <title>Nishika Asati | Data Scientist & Python Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js CDN for radar chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
+            font-family: 'Inter', sans-serif;
         }
-
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin: 20px 0 10px;
-            color: #000;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin: 20px 0 10px;
-            color: #000;
-        }
-
-        p, ul {
-            font-size: 1em;
-            line-height: 1.6;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #0056b3;
-        }
-
-        .project {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin: 20px;
-            padding: 20px;
-        }
-
-        .project-title {
-            font-size: 1.8em;
-            color: #000;
-        }
-
-        .project-description {
-            margin: 10px 0;
-        }
-
-        .skills, .projects, .goals, .summary {
-            margin: 20px;
-        }
-
-        .skills ul, .projects ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-
-        .project-link {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .github-repo {
-            color: #007bff;
-            font-size: 1em;
-            text-decoration: none;
-        }
-
-        .github-repo:hover {
-            color: #0056b3;
-        }
-        .professional-experience {
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .professional-experience h2 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        .experience {
-            border-bottom: 1px solid #ddd;
-            padding: 15px 0;
-        }
-
-        .experience:last-child {
-            border-bottom: none;
-        }
-
-        .experience h3 {
-            font-size: 20px;
-            color: #555;
-            margin-bottom: 10px;
-        }
-
-        .experience p {
-            font-size: 16px;
-            color: #666;
-            margin: 5px 0;
-        }
-
-        .experience ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        .experience ul li {
-            font-size: 16px;
-            color: #666;
-            margin: 5px 0;
-        }
-
     </style>
 </head>
 
-<body>
-    <header>
-        <h1>Nishika Asati</h1>
-        <p>+91-9179192010 | <a href="https://www.linkedin.com/in/nishikaasati2900" target="_blank">LinkedIn</a> | <a href="https://github.com/Nishika2900" target="_blank">Github</a> | <a href="https://nishikaasati.com" target="_blank">My Portfolio</a> | <a href="https://scaler.com/u/nishika_29" target="_blank">Scaler</a></p>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section: Contains name and contact/social links -->
+    <header class="bg-gray-900 text-white shadow-md">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold">Nishika Asati</h1>
+            <p class="mt-2 text-lg text-gray-300">
+                <a href="https://www.linkedin.com/in/nishikaasati2900" target="_blank" class="hover:text-blue-400 transition-colors duration-300 mx-2">LinkedIn</a> |
+                <a href="https://github.com/Nishika2900" target="_blank" class="hover:text-blue-400 transition-colors duration-300 mx-2">GitHub</a> |
+            </p>
+        </div>
     </header>
 
-    <main>
-        <section class="summary">
-            <h2>Introduction</h2>
-            <p><strong>Professional Summary:</strong></p>
-            <p>I am a skilled data scientist and Python developer with a B.Tech degree in Electronics and Communication Engineering. With experience in data analysis, machine learning, and natural language processing, I am passionate about leveraging data to drive insights and innovations. My projects range from exploratory data analysis and predictive modeling to advanced NLP tasks, demonstrating my ability to tackle complex problems with data-driven solutions.</p>
-            <p>Combining technical expertise with a keen analytical mindset, I excel at transforming data into actionable insights. I am dedicated to continuous learning and adapting to new challenges, aiming to contribute meaningfully to innovative projects.</p>
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Introduction Section: A brief summary about the professional -->
+        <section id="summary" class="bg-white p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-2 mb-4">About Me</h2>
+            <p class="mb-4 text-lg">
+                As a Data Scientist and Python Developer, I am deeply passionate about uncovering the stories hidden within data. My journey is driven by a curiosity to solve complex, real-world problems through machine learning, data analysis, and automation. I find immense satisfaction in transforming raw data into clean, actionable insights that fuel strategic decisions.
+            </p>
+            <p class="mb-4 text-lg">
+                I am particularly excited by challenges in natural language processing and predictive analytics, where I can build intelligent systems that learn and adapt. My goal is to contribute my skills to an innovative team where I can continue to grow and make a meaningful impact.
+            </p>
+            <p class="text-lg font-semibold">
+                I am actively seeking new opportunities in data science and automation. Please feel free to connect with me!
+            </p>
         </section>
 
-        <section class="goals">
-            <p><strong>Career Goals:</strong></p>
-            <p>My goal is to further advance my expertise in data science and machine learning, with a focus on solving real-world problems and driving innovation. I am eager to contribute to cutting-edge projects and grow within a dynamic team environment.</p>
-        </section>
-
-        <section class="professional-experience">
-            <h2>Professional Experience</h2>
-
-            <div class="experience">
-                <h3>Solution Consultant - Data & Automation Specialist</h3>
-                <p><strong>Company:</strong> Lancesoft India Pvt. Ltd. deployed at DTICI</p>
-                <p><strong>Duration:</strong> August 2024 - Present</p>
-                <p><strong>Location:</strong> Bangalore, Karnataka</p>
-                <p><strong>Responsibilities:</strong></p>
-                <ul>
-                    <li>Spearheaded prompt engineering for LLM model training, enhancing response accuracy through optimized API integration.</li>
-                    <li>Streamlined data collection & cleaning from core teams, facilitating efficient model training.</li>
-                    <li>Executed exploratory data analysis (EDA) to ensure data quality, improving model outputs by more than 40% through continuous iterative enhancements.</li>
-                    <li>Engineered a web-based Streamlit Application to mirror an established system, enhancing its capabilities with team-specific features focused on Data analytics.</li>
-                </ul>
-            </div>
-
-            <div class="experience">
-                <h3>Solution Consultant - Python Developer</h3>
-                <p><strong>Company:</strong> Lancesoft India Pvt.Ltd. deployed at DTICI</p>
-                <p><strong>Duration:</strong> June 2023 - July 2024</p>
-                <p><strong>Location:</strong> Bangalore, Karnataka</p>
-                <p><strong>Responsibilities:</strong></p>
-                <ul>
-                    <li>Independently optimized workflows by designing, implementing, and deploying Python & PyQt5 applications, significantly boosting operational efficiency.</li>
-                    <li>Streamlined processes by engineering a chatbot and Data Manipulation Tool, driving automation and enhancing productivity.</li>
-                    <li>Developed intuitive, tailored solutions, including PowerApps, by analyzing Python automation scope and showcasing proactive innovation to meet organizational needs.</li>
-                </ul>
-            </div>
-        </section>
-
-
-        <section class="skills">
-            <h2>Skills</h2>
-                <h3>Technical: </h3>
-                    <ul>
-                        <li><strong>Languages:</strong> Python, C, C++, SQL</li>
-                        <li><strong>Frameworks:</strong> Hugging Face, OpenCV, Docker</li>
-                        <li><strong>Data Analysis & Visualization:</strong> MATLAB, Matplotlib, Plotly, Numpy, Pandas, SciPy</li>
-                        <li><strong>Other Skills:</strong> OpenCV, Selenium, GUI & Web Development (PyQt5, HTML/CSS/JavaScript), PowerApps, NLP, Computer Vision, Product Analytics, Machine Learning, Neural Networks</li>
+        <!-- Professional Experience Section: Details of past and current job roles -->
+        <section id="experience" class="bg-white p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-2 mb-4">Professional Experience</h2>
+            <div class="space-y-6">
+                <div class="border-l-4 border-blue-500 pl-4">
+                    <h3 class="text-xl font-semibold">Solution Consultant - Data & Automation Specialist</h3>
+                    <p class="font-medium">Lancesoft India Pvt. Ltd. (deployed at Daimler Truck Innovation Center India)</p>
+                    <p class="text-gray-600">Aug 2024 - Present | Bangalore, Karnataka</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                        <li>Spearheaded prompt engineering for LLM training, enhancing response accuracy through optimized API integration.</li>
+                        <li>Streamlined data collection and cleaning from core teams to facilitate efficient model training.</li>
+                        <li>Executed exploratory data analysis (EDA) to ensure data quality, improving model outputs by over 40%.</li>
+                        <li>Engineered a web-based Streamlit application to mirror an established system, enhancing its capabilities.</li>
                     </ul>
-                <h3>Soft Skills: </h3>
-                    <ul>
-                        <li>Teamwork</li>
-                        <li>Communication</li>
-                        <li>Problem-solving</li>
-                        <li>Adaptability</li>
-                        <li>Conflict Resolution</li>
+                </div>
+                <div class="border-l-4 border-blue-500 pl-4">
+                    <h3 class="text-xl font-semibold">Solution Consultant - Python Developer</h3>
+                    <p class="font-medium">Lancesoft India Pvt. Ltd. (deployed at Daimler Truck Innovation Center India)</p>
+                    <p class="text-gray-600">Jun 2023 - Jul 2024 | Bangalore, Karnataka</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                        <li>Optimized workflows by designing and deploying Python & PyQt5 applications, significantly boosting operational efficiency.</li>
+                        <li>Streamlined processes by engineering a chatbot and a data manipulation tool to drive automation.</li>
+                        <li>Developed intuitive, tailored solutions, including PowerApps, by analyzing Python automation scope.</li>
                     </ul>
-        </section>
-
-        <section class="projects">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <div class="project-title">Raw Data Analysis on Netflix Data</div>
-                <div class="project-description">
-                    <p>Processed and managed raw Netflix data to ensure accuracy, resolve inconsistencies, and prepare it for analysis. Conducted exploratory analysis utilizing descriptive statistics and crafted visualizations to identify trends, enhancing data-driven decision-making. Developed a detailed report highlighting 4528 unique directors and production volumes by country, delivering actionable recommendations for optimizing content strategy.</p>
-                    <div class="project-link">
-                        <a href="https://github.com/Nishika2900/netflix-data-exploration" class="github-repo" target="_blank">GitHub Repository</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Aerofit's Consumer Behavior Analysis</div>
-                <div class="project-description">
-                    <p>Conducted comprehensive descriptive statistics and probability analysis on the Aerofit dataset, identifying key variables' relationships. Managed a dataset with 180 entries, ensuring data quality by handling missing values and outliers. Provided detailed statistical summaries, like mean age of 28.79 years and income range from 29,562 to 1,04,581. Applied probability analysis techniques, revealing a 10% spending behavior variance based on fitness scores and demographics. Segmented analysis unveiled distinct differences in product usage and spending patterns based on education and marital status.</p>
-                    <div class="project-link">
-                        <a href="https://github.com/Nishika2900/Aerofit-Descriptive-Statistics-Probability" class="github-repo" target="_blank">GitHub Repository</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">NLP-Based News Categorization for Flipit</div>
-                <div class="project-description">
-                    <p>Developed an NLP-driven system to categorize 2,000+ news articles into predefined categories like politics and technology. Utilized text preprocessing techniques and feature extraction to enhance categorization accuracy. Achieved a high accuracy of 96.95% using Naive Bayes model with TF-IDF on machine learning models comparison.</p>
-                    <div class="project-link">
-                        <a href="https://github.com/Nishika2900/NLP_FlipitNews_casestudy/tree/alpha" class="github-repo" target="_blank">GitHub Repository</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Transactional Data Analysis for Walmart using Confidence Interval (CI)</div>
-                <div class="project-description">
-                    <p>Analyzed transactional data to assess spending behavior, focusing on gender-based differences, improving targeted marketing by 20%. Conducted data preparation, EDA, statistical analysis, and segmentation, reducing analysis time and streamlining decision-making. Visualized spending patterns, revealing gender-based differences, driving product customization and marketing strategies.</p>
-                     <div class="project-link">
-                        <a href="https://github.com/nishika2900/Walmart_CaseStudy" class="github-repo" target="_blank">GitHub Repository</a>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <!-- Skills Section: Lists technical competencies categorized by proficiency and includes a radar chart -->
+        <section id="skills" class="bg-white p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-2 mb-4">Technical Skills</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Areas of Expertise</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li><strong>Languages:</strong> Python, C, SQL</li>
+                        <li><strong>Data Handling:</strong> NumPy, Pandas, Data Cleaning, Feature Engineering</li>
+                        <li><strong>Analytics & Statistics:</strong> Product Analytics, Descriptive Statistics, Inferential Statistics, Hypothesis Testing</li>
+                        <li><strong>Machine Learning & AI:</strong> Neural Networks, Computer Vision, Natural Language Processing (NLP), Generative AI (GenAI)</li>
+                        <li><strong>Development & Visualization:</strong> PyQt5, HTML/CSS/JavaScript, Plotly, PowerApps, Streamlit, OpenCV, SciPy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Practical Knowledge</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li><strong>Languages:</strong> C++</li>
+                        <li><strong>Machine Learning:</strong> Machine Learning (Supervised Algorithms), Machine Learning (Unsupervised Algorithms), Hugging Face</li>
+                        <li><strong>Development & Tools:</strong> MATLAB, Matplotlib, Selenium, MLOps</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-semibold mt-4 mb-2">Theoretical Knowledge</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li><strong>Tools & Concepts:</strong> Docker, Computer ML System Design & Data Engineering</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Radar Chart for Skill Visualization -->
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-center">Data Science & Analytics Proficiency Radar</h3>
+                <p class="text-center text-gray-600 mb-4">This radar chart highlights my core competencies in Data Science and Analytics (scale 0-5).</p>
+                <div class="flex justify-center">
+                    <canvas id="skillRadarChart" class="max-w-xl w-full"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section: Showcases key projects with descriptions and tech stacks -->
+        <section id="projects" class="mb-8">
+            <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-2 mb-4 ml-0 md:ml-0 bg-white p-6 rounded-t-lg shadow-lg">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card: Netflix -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Netflix Data Exploration</h3>
+                        <p class="text-gray-700 mb-4">Conducted a comprehensive analysis of Netflix data to uncover content trends, identifying 4,528 unique directors and production volumes by country to inform content strategy.</p>
+                        <p class="font-semibold mb-2">Tech Stack:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded">Pandas</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded">Matplotlib</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded">Seaborn</span>
+                        </div>
+                        <a href="https://github.com/Nishika2900/netflix-data-exploration" target="_blank" class="inline-block mt-4 text-blue-600 hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card: NLP FlipItNews -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">NLP-Based News Categorization</h3>
+                        <p class="text-gray-700 mb-4">Developed an NLP system to auto-categorize 2,000+ articles. Achieved 96.95% accuracy using a Naive Bayes model with TF-IDF vectorization.</p>
+                        <p class="font-semibold mb-2">Tech Stack:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">Scikit-learn</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">NLTK</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded">Pandas</span>
+                        </div>
+                        <a href="https://github.com/nishika2900/NLP_FlipitNews_casestudy" target="_blank" class="inline-block mt-4 text-blue-600 hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card: Walmart -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Walmart Black Friday Analysis</h3>
+                        <p class="text-gray-700 mb-4">Analyzed customer spending on Black Friday using confidence intervals to determine if spending habits differ by gender, improving targeted marketing insights by 20%.</p>
+                        <p class="font-semibold mb-2">Tech Stack:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded">NumPy</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded">Pandas</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded">SciPy</span>
+                        </div>
+                        <a href="https://github.com/nishika2900/Walmart_CaseStudy" target="_blank" class="inline-block mt-4 text-blue-600 hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card: Delhivery -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Delhivery Logistics Analysis</h3>
+                        <p class="text-gray-700 mb-4">Cleaned and engineered features from raw logistics data to prepare it for forecasting models, helping the data science team better predict delivery performance.</p>
+                        <p class="font-semibold mb-2">Tech Stack:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-red-100 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-red-100 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded">Pandas</span>
+                            <span class="bg-red-100 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded">NumPy</span>
+                        </div>
+                        <a href="https://github.com/Nishika2900/Delhivery-Case-Study" target="_blank" class="inline-block mt-4 text-blue-600 hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card: Yulu -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Yulu E-Cycle Demand Analysis</h3>
+                        <p class="text-gray-700 mb-4">Used hypothesis testing (T-tests, ANOVA) to identify which variables, like weather and seasonality, are significant in predicting demand for shared electric cycles.</p>
+                        <p class="font-semibold mb-2">Tech Stack:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded">Pandas</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded">SciPy</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded">Statsmodels</span>
+                        </div>
+                        <a href="https://github.com/nishika2900/YULU_Case_Study" target="_blank" class="inline-block mt-4 text-blue-600 hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project Card: Aerofit -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Aerofit Consumer Behavior Analysis</h3>
+                        <p class="text-gray-700 mb-4">Performed descriptive statistics and probability analysis to segment customers, revealing distinct differences in product usage based on fitness and demographic profiles.</p>
+                        <p class="font-semibold mb-2">Tech Stack:</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded">Pandas</span>
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded">Matplotlib</span>
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded">Seaborn</span>
+                        </div>
+                        <a href="https://github.com/Nishika2900/Aerofit-Descriptive-Statistics-Probability" target="_blank" class="inline-block mt-4 text-blue-600 hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education Section: Details of academic qualifications -->
+        <section id="education" class="bg-white p-6 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold border-b-2 border-gray-200 pb-2 mb-4">Education</h2>
+            <div class="mb-4">
+                <h3 class="text-xl font-semibold">Scaler Academy</h3>
+                <p class="font-medium text-gray-700">Post Graduate Program, Data Science and Machine Learning</p>
+                <p class="text-gray-600">Duration: December 2022 - 2024</p>
+                <a href="https://www.scaler.com" target="_blank" class="text-blue-600 hover:underline">Scaler Academy Website</a>
+            </div>
             <div>
-                <footer>
-                    <a href="https://www.linkedin.com/in/nishikaasati2900" target="_blank">LinkedIn</a> | <a href="https://github.com/Nishika2900" target="_blank">Github</a> | <a href="https://nishikaasati.com" target="_blank">My Portfolio</a> | <a href="https://scaler.com/u/nishika_29" target="_blank">Scaler</a>
-                </footer>
+                <h3 class="text-xl font-semibold">Medi-Caps University, Indore</h3>
+                <p class="font-medium text-gray-700">Bachelor of Technology (B.Tech), Electronics and Communication</p>
+                <p class="text-gray-600">Duration: August 2018 - 2022</p>
+                <a href="https://www.medicaps.ac.in" target="_blank" class="text-blue-600 hover:underline">University Website</a>
             </div>
         </section>
 
     </main>
+
+    <!-- Footer Section: Contains additional contact information and copyright -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto px-6 text-center">
+               <p class="mt-2 text-lg text-gray-300">
+                 <a href="mailto:nishikaasati@gmail.com" class="hover:text-blue-400 transition-colors duration-300 mx-2">nishikaasati@gmail.com</a> |
+                 <a href="mailto:nishikaasati@outlook.com" class="hover:text-blue-400 transition-colors duration-300 mx-2">nishikaasati@outlook.com</a>
+            </p>
+            <p class="text-gray-500 text-sm mt-2">&copy; 2025 Nishika Asati</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for the Radar Chart
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('skillRadarChart').getContext('2d');
+
+            // Define skill categories and their proficiency levels for a Data Science/Analyst profile.
+            // Scale: 0-5 (0 = No experience, 5 = Expert)
+            const labels = [
+                'Python & SQL', 
+                'Data Analysis & Visualization', 
+                'Machine Learning (incl. NLP, GenAI)', 
+                'Statistical Analysis & Hypothesis Testing',
+                'Computer Vision', 
+                'MLOps & System Design'
+            ];
+
+            // Based on user's detailed ratings:
+            // Python: 5, C: 4, C++: 3, SQL: 4
+            // Hugging Face: 3, OpenCV: 4.5, Docker: 2.5
+            // MATLAB: 3, Matplotlib: 3, Plotly: 4, NumPy: 5, Pandas: 5, SciPy: 4
+            // PyQt5: 5, HTML/CSS/JavaScript: 5, Selenium: 3.5, PowerApps: 4, Streamlit: 4
+            // Natural Language Processing (NLP): 4.5
+            // Machine Learning (Supervised Algorithms): 3.7
+            // Machine Learning (Unsupervised Algorithms): 3
+            // Neural Networks: 5
+            // Computer Vision: 5
+            // Generative AI (GenAI): 4
+            // Data Cleaning: 5
+            // Feature Engineering: 5
+            // Product Analytics: 5
+            // Hypothesis Testing: 4.5
+            // Descriptive Statistics: 5
+            // Inferential Statistics: 5
+            // MLOps: 3.8
+            // Computer ML System Design & Data Engineering: 2
+
+            const data = [
+                (5 + 4) / 2,     // Python (5), SQL (4) = 4.5
+                (3 + 4 + 5 + 5 + 4 + 5 + 5 + 5 + 5) / 9, // Matplotlib (3), Plotly (4), NumPy (5), Pandas (5), SciPy (4), Data Cleaning (5), Feature Engineering (5), Descriptive Statistics (5), Inferential Statistics (5) = Avg ~4.4
+                (3 + 3.7 + 3 + 5 + 4.5 + 4) / 6, // Hugging Face (3), ML Supervised (3.7), ML Unsupervised (3), Neural Networks (5), NLP (4.5), GenAI (4) = Avg ~3.9
+                (5 + 4.5 + 5 + 5) / 4, // Product Analytics (5), Hypothesis Testing (4.5), Descriptive Statistics (5), Inferential Statistics (5) = Avg ~4.9
+                (4.5 + 5) / 2,   // OpenCV (4.5), Computer Vision (5) = Avg ~4.8
+                (3.8 + 2) / 2    // MLOps (3.8), Computer ML System Design & Data Engineering (2) = Avg ~2.9
+            ];
+
+            const skillRadarChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Proficiency Level',
+                        data: data,
+                        // Vibrant blue color with transparency for fill
+                        backgroundColor: 'rgba(30, 144, 255, 0.3)', // DodgerBlue with more transparency
+                        borderColor: 'rgba(30, 144, 255, 1)',      // Solid DodgerBlue for border
+                        borderWidth: 2, // Slightly thicker border
+                        pointBackgroundColor: 'rgba(30, 144, 255, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(30, 144, 255, 1)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false, // Allows the chart to adapt to container size better
+                    scales: {
+                        r: {
+                            angleLines: {
+                                color: 'rgba(0, 0, 0, 0.15)' // Slightly darker grey angle lines
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.15)' // Slightly darker grey grid lines
+                            },
+                            pointLabels: {
+                                font: {
+                                    size: 12
+                                },
+                                color: '#333' // Darker color for skill labels
+                            },
+                            min: 0,
+                            max: 5, // Max proficiency level
+                            ticks: {
+                                stepSize: 1,
+                                showLabelBackdrop: false,
+                                display: false // Hide numerical ticks on the axis
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false // Hide the dataset legend
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.raw.toFixed(1) + '/5'; // Displaying one decimal place
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 
 </body>
 
