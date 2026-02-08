@@ -1,37 +1,72 @@
+/* --- Modern Portfolio CSS 2026 --- */
+
+:root {
+    --primary-dark: #111827;
+    --accent-blue: #2563eb;
+    --text-main: #1f2937;
+    --bg-light: #f4f4f9;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
 }
 
+/* Header Section */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: var(--primary-dark);
+    color: #ffffff;
+    padding: 3rem 1rem;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact-info a {
-    color: #007BFF;
-    text-decoration: none;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: -0.025em;
 }
 
-.contact-info a:hover {
-    text-decoration: underline;
+header p {
+    color: #60a5fa; /* Light blue */
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
 
+/* Layout Containers */
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+    max-width: 1000px;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+/* Typography */
 h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+    border-bottom: 3px solid var(--accent-blue);
+    padding-bottom: 0.75rem;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+    color: var(--primary-dark);
+}
+
+/* Experience & Lists */
+.experience-item {
+    border-left: 4px solid var(--accent-blue);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 ul {
@@ -40,21 +75,40 @@ ul {
 }
 
 li {
-    padding: 10px 0;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
 }
 
+/* Skill Tags (The "Pills") */
+.tech-pill {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 4px 2px;
+}
+
+/* Links */
 a {
-    color: #007BFF;
+    color: var(--accent-blue);
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
 }
 
 a:hover {
+    color: #1d4ed8;
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+    padding: 3rem 1rem;
+    background-color: var(--primary-dark);
+    color: #9ca3af;
+    font-size: 0.875rem;
 }
