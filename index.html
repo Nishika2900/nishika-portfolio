@@ -3,151 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishika Asati | Data Automation Portfolio</title>
+    <meta name="description" content="Nishika Asati - Data Automation Engineer specializing in Python, GenAI, and NLP.">
+    <title>Nishika Asati | Data Automation Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
-        .glass-card { background: white; border: 1px solid #e2e8f0; transition: all 0.3s ease; }
-        .glass-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
-        .process-number { font-size: 2.5rem; font-weight: 800; opacity: 0.1; position: absolute; top: 1rem; right: 1.5rem; color: #3b82f6; }
-        .process-node { border-left: 2px dashed #cbd5e1; padding-left: 1.5rem; position: relative; padding-bottom: 0.5rem; margin-bottom: 0.5rem; }
-        .process-node::before { content: ''; position: absolute; left: -6px; top: 0; width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; }
-        header { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
-        .highlight-title { font-weight: 800; letter-spacing: 0.05em; color: #60a5fa; }
+        body { font-family: 'Inter', sans-serif; background-color: #fcfcfd; color: #1e293b; line-height: 1.6; }
+        .tech-pill { background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; }
+        .section-header { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.15em; color: #94a3b8; text-transform: uppercase; border-bottom: 2px solid #f1f5f9; padding-bottom: 0.5rem; margin-bottom: 1.5rem; display: block; }
+        .exp-border { border-left: 2px solid #3b82f6; padding-left: 1.5rem; position: relative; }
+        .exp-dot { position: absolute; left: -5px; top: 0; width: 8px; height: 8px; background: #3b82f6; border-radius: 50%; }
+        .logic-box { background: #f1f5f9; border-radius: 8px; padding: 1rem; border-left: 3px solid #cbd5e1; }
+        header { background: #ffffff; border-bottom: 1px solid #e2e8f0; }
+        @media (max-width: 768px) { .header-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
-    <header class="text-white py-24 px-6 text-center">
-        <h1 class="text-6xl font-extrabold tracking-tighter mb-4">Nishika Asati</h1>
-        <p class="highlight-title text-xl uppercase">Data Automation Engineer | GenAI</p>
-        <p class="max-w-2xl mx-auto mt-6 text-slate-400 leading-relaxed font-medium">
-            Resourceful solver specializing in the intersection of <b>Python</b>, <b>GenAI</b>, and <b>Automated Workflows</b>. I thrive on technical puzzles—if a tool doesn't exist, I'll teach myself the framework to build it.
-        </p>
-        <div class="mt-10 flex justify-center gap-6">
-            <a href="https://linkedin.com/in/nishikaasati2900" target="_blank" class="bg-blue-600 hover:bg-blue-500 px-10 py-3 rounded-xl transition font-bold shadow-lg">LinkedIn</a>
-            <a href="https://github.com/Nishika2900" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-10 py-3 rounded-xl transition font-bold border border-slate-700">GitHub</a>
+    <header class="py-12 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid md:grid-cols-3 gap-8 header-grid">
+                <div class="md:col-span-2">
+                    <h1 class="text-4xl font-extrabold tracking-tight text-slate-900">Nishika Asati</h1>
+                    <p class="text-blue-600 font-bold text-lg mt-1">Data Automation Engineer | GenAI Specialist</p>
+                    <p class="mt-6 text-slate-600 text-sm md:text-base leading-relaxed">
+                        Data Automation professional with 2.7 years of experience at **Daimler Truck Innovation Center India (DTICI)**. Specialized in architecting end-to-end automation pipelines using **Python**, **GenAI**, and **NLP**. Proven track record in developing modular migration tools, prompt engineering for internal LLMs, and building responsive UI frameworks (PyQt5, Streamlit) to optimize enterprise workflows.
+                    </p>
+                </div>
+                <div class="space-y-3 pt-2">
+                    <span class="section-header">Contact & Identity</span>
+                    <div class="text-sm font-semibold space-y-2">
+                        <p class="text-slate-500">📍 Bangalore, India</p>
+                        <p class="text-slate-700">📧 <a href="mailto:nishikaasati@gmail.com" class="hover:text-blue-600">nishikaasati@gmail.com</a></p>
+                        <p class="text-slate-700">🔗 <a href="https://linkedin.com/in/nishikaasati2900" target="_blank" class="hover:text-blue-600">LinkedIn Profile</a></p>
+                        <p class="text-slate-700">💻 <a href="https://github.com/Nishika2900" target="_blank" class="hover:text-blue-600">GitHub Repository</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-16 max-w-6xl">
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
 
-        <section class="mb-24">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass-card p-8 rounded-3xl relative overflow-hidden">
-                    <span class="process-number">01</span>
-                    <h3 class="font-extrabold text-xl mb-4 text-blue-600 uppercase tracking-tight">Pattern Discovery</h3>
-                    <p class="text-slate-600 leading-relaxed">Diving into raw data to find the "hidden" logic. I use <b>EDA</b> and <b>IQR</b> to ensure the foundation is clean before I ever start automating.</p>
+        <section class="mb-16">
+            <span class="section-header">Technical Skill Matrix</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div>
+                    <h4 class="font-bold text-xs uppercase text-slate-400 mb-2">Automation & UI</h4>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="tech-pill">Python</span><span class="tech-pill">PyQt5</span><span class="tech-pill">Streamlit</span><span class="tech-pill">PowerApps</span>
+                    </div>
                 </div>
-                <div class="glass-card p-8 rounded-3xl relative overflow-hidden">
-                    <span class="process-number">02</span>
-                    <h3 class="font-extrabold text-xl mb-4 text-blue-600 uppercase tracking-tight">Custom Building</h3>
-                    <p class="text-slate-600 leading-relaxed">Developing modular <b>Python</b> scripts and teaching myself new libraries (like <b>NLTK</b> or <b>PyQt5</b>) to solve specific project bottlenecks.</p>
+                <div>
+                    <h4 class="font-bold text-xs uppercase text-slate-400 mb-2">AI & Data Science</h4>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="tech-pill">GenAI</span><span class="tech-pill">NLP</span><span class="tech-pill">LLM Prompting</span><span class="tech-pill">NLTK</span>
+                    </div>
                 </div>
-                <div class="glass-card p-8 rounded-3xl relative overflow-hidden">
-                    <span class="process-number">03</span>
-                    <h3 class="font-extrabold text-xl mb-4 text-blue-600 uppercase tracking-tight">Adaptive UI</h3>
-                    <p class="text-slate-600 leading-relaxed">Translating messy back-end logic into <b>Streamlit</b> or <b>PowerApps</b> interfaces so my automation is accessible to everyone.</p>
+                <div>
+                    <h4 class="font-bold text-xs uppercase text-slate-400 mb-2">Analytics & Stats</h4>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="tech-pill">Pandas</span><span class="tech-pill">NumPy</span><span class="tech-pill">Hypothesis Testing</span><span class="tech-pill">EDA</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xs uppercase text-slate-400 mb-2">Data Management</h4>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="tech-pill">SQL</span><span class="tech-pill">ETL Pipelines</span><span class="tech-pill">Schema Mapping</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="mb-24">
-            <h2 class="text-3xl font-black text-slate-900 mb-12 flex items-center gap-6 uppercase tracking-tight">
-                Work Experience
-                <span class="h-1 bg-slate-200 flex-grow rounded-full"></span>
-            </h2>
-
-            <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 mb-12">
-                <div class="flex flex-wrap justify-between items-start mb-8">
-                    <div>
-                        <h3 class="text-2xl font-bold text-slate-900">Data Automation Engineer</h3>
-                        <p class="text-blue-600 font-bold text-lg">Lancesoft (Deployed at DTICI) | Aug 2024 - Present</p>
+        <section class="mb-16">
+            <span class="section-header">Professional Experience</span>
+            
+            <div class="space-y-12">
+                <div class="exp-border">
+                    <div class="exp-dot"></div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Data Automation Engineer</h3>
+                            <p class="text-blue-600 font-semibold text-sm">Lancesoft India (Deployed at DTICI) | Aug 2024 — Present</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-12">
-                    <ul class="space-y-4 text-slate-700 text-sm md:text-base">
-                        <li>• <b>GenAI Implementation:</b> Designing <b>Prompt Engineering</b> workflows and iterating on LLM training to sharpen internal tool accuracy.</li>
-                        <li>• <b>The Migration Solve:</b> Built an <b>NLP tool</b> from scratch to handle legacy data transfer, ensuring 100% reusability by mapping unstructured strings to target system logic.</li>
-                        <li>• <b>Resourceful App Dev:</b> Learned and deployed a <b>Streamlit</b> interface to give stakeholders real-time visibility into complex data automation cycles.</li>
-                    </ul>
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-4 italic">Process: Making it work</h4>
-                        <div class="space-y-0 text-xs text-slate-600">
-                            <div class="process-node"><b>Identify:</b> Mapping messy legacy logs to modern schemas.</div>
-                            <div class="process-node"><b>Bridge:</b> Building custom NLTK/Regex logic layers.</div>
-                            <div class="process-node"><b>Audit:</b> Validating every record for schema integrity.</div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <ul class="md:col-span-2 text-sm text-slate-600 space-y-3">
+                            <li>• **GenAI Lifecycle:** Orchestrating prompt engineering and iterative LLM training cycles to enhance response accuracy for internal intelligence tools.</li>
+                            <li>• **NLP Data Migration:** Architected a modular migration system using NLP for unstructured entity mapping, ensuring high fidelity during legacy data transfers.</li>
+                            <li>• **Data Governance:** Implementing automated validation scripts and EDA workflows to maintain data integrity across core engineering pipelines.</li>
+                            <li>• **Stakeholder Visibility:** Developed Streamlit-based web applications to mirror internal system logic, providing real-time process monitoring for non-technical leadership.</li>
+                        </ul>
+                        <div class="logic-box text-[11px] text-slate-500">
+                            <p class="font-bold text-slate-700 uppercase mb-2">Migration Logic Flow</p>
+                            <p>1. <b>Extraction:</b> Raw Unstructured Logs</p>
+                            <p>2. <b>Processing:</b> Semantic Entity Mapping (NLTK)</p>
+                            <p>3. <b>Validation:</b> Integrity & Schema Audit</p>
+                            <p>4. <b>Loading:</b> Target Environment Sync</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100">
-                <div class="flex flex-wrap justify-between items-start mb-8">
-                    <div>
-                        <h3 class="text-2xl font-bold text-slate-900">Python Developer</h3>
-                        <p class="text-blue-600 font-bold text-lg">Lancesoft (Deployed at DTICI) | Jun 2023 - Jul 2024</p>
+                <div class="exp-border">
+                    <div class="exp-dot"></div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Python Developer</h3>
+                            <p class="text-blue-600 font-semibold text-sm">Lancesoft India (Deployed at DTICI) | Jun 2023 — Jul 2024</p>
+                        </div>
                     </div>
-                </div>
-                <div class="grid md:grid-cols-2 gap-12">
-                    <ul class="space-y-4 text-slate-700 text-sm md:text-base">
-                        <li>• <b>Technical Fixes:</b> Solved manual team bottlenecks by building <b>PyQt5</b> desktop apps—handling multi-threading to keep tools fast and stable.</li>
-                        <li>• <b>Automated Queries:</b> Taught myself custom NLP techniques to build <b>internal chatbots</b> that turned manual reporting into 5-second queries.</li>
-                        <li>• <b>Tool Selection:</b> Leveraged <b>PowerApps</b> and Python interchangeably to find the fastest, most reliable path to organizational efficiency.</li>
+                    <ul class="text-sm text-slate-600 space-y-3 mb-4">
+                        <li>• **Desktop Frameworks:** Developed multi-threaded PyQt5 applications to automate data-heavy manual workflows, significantly increasing team throughput.</li>
+                        <li>• **Conversational Agents:** Built custom NLP-based chatbots and manipulation tools to facilitate automated reporting and internal data visibility.</li>
+                        <li>• **Process Optimization:** Identified and addressed manual bottlenecks through the deployment of PowerApps and automated Python utility scripts.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="mb-24">
-            <h2 class="text-3xl font-black text-slate-900 mb-12 flex items-center gap-6 uppercase tracking-tight">
-                Personal Projects
-                <span class="h-1 bg-slate-200 flex-grow rounded-full"></span>
-            </h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="glass-card p-8 rounded-3xl border border-slate-200">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="font-extrabold text-xl">NLP News Categorization</h3>
-                        <a href="https://github.com/Nishika2900/NLP_FlipitNews_casestudy" target="_blank" class="text-blue-600 font-bold text-xs uppercase underline">View ↗</a>
+        <section class="mb-16">
+            <span class="section-header">Technical Case Studies & Analysis</span>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-5 border border-slate-200 rounded-lg bg-white">
+                    <div class="flex justify-between font-bold text-slate-900 text-sm mb-2">
+                        <span>NLP News Categorization</span>
+                        <a href="https://github.com/Nishika2900/NLP_FlipitNews_casestudy" target="_blank" class="text-blue-600 hover:underline">GITHUB ↗</a>
                     </div>
-                    <p class="text-sm text-slate-600 mb-6">Built a high-accuracy (<b>96.95%</b>) classifier by experimenting with different vectorization and classification models.</p>
-                    <div class="flex flex-wrap gap-2"><span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-md text-[10px] font-bold tracking-tighter">NLTK</span><span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-md text-[10px] font-bold tracking-tighter">SK-LEARN</span><span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-md text-[10px] font-bold tracking-tighter">PYTHON</span></div>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">Achieved 96.95% accuracy in classifying 2,000+ articles using TF-IDF vectorization and Multinomial Naive Bayes modeling.</p>
+                    <div class="flex gap-2"><span class="tech-pill">NLTK</span><span class="tech-pill">Scikit-Learn</span></div>
                 </div>
 
-                <div class="glass-card p-8 rounded-3xl border border-slate-200">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="font-extrabold text-xl">Walmart Stat Analysis</h3>
-                        <a href="https://github.com/Nishika2900/Walmart_CaseStudy" target="_blank" class="text-blue-600 font-bold text-xs uppercase underline">View ↗</a>
+                <div class="p-5 border border-slate-200 rounded-lg bg-white">
+                    <div class="flex justify-between font-bold text-slate-900 text-sm mb-2">
+                        <span>Walmart Transactional Analytics</span>
+                        <a href="https://github.com/Nishika2900/Walmart_CaseStudy" target="_blank" class="text-blue-600 hover:underline">GITHUB ↗</a>
                     </div>
-                    <p class="text-sm text-slate-600 mb-6">Using <b>Hypothesis Testing</b> to prove if customer spend variances were statistically significant or just random noise.</p>
-                    <div class="flex flex-wrap gap-2"><span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-md text-[10px] font-bold tracking-tighter">STATS</span><span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-md text-[10px] font-bold tracking-tighter">PANDAS</span><span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-md text-[10px] font-bold tracking-tighter">HYPOTHESIS</span></div>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">Conducted hypothesis testing (T-tests/ANOVA) to validate consumer spend variances across demographic segments.</p>
+                    <div class="flex gap-2"><span class="tech-pill">Statsmodels</span><span class="tech-pill">Inferential Stats</span></div>
+                </div>
+
+                <div class="p-5 border border-slate-200 rounded-lg bg-white">
+                    <div class="flex justify-between font-bold text-slate-900 text-sm mb-2">
+                        <span>Delhivery Logistics Performance</span>
+                        <a href="#" target="_blank" class="text-blue-600 hover:underline">GITHUB ↗</a>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">Applied feature engineering to logistics data to analyze delivery timeframes and optimize supply chain processing logic.</p>
+                    <div class="flex gap-2"><span class="tech-pill">Feature Engineering</span><span class="tech-pill">Seaborn</span></div>
+                </div>
+
+                <div class="p-5 border border-slate-200 rounded-lg bg-white">
+                    <div class="flex justify-between font-bold text-slate-900 text-sm mb-2">
+                        <span>Netflix & Aerofit Studies</span>
+                        <a href="#" target="_blank" class="text-blue-600 hover:underline">GITHUB ↗</a>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-3">Utilized descriptive statistics and probability profiling to extract insights from 8,800+ titles and user treadmill usage patterns.</p>
+                    <div class="flex gap-2"><span class="tech-pill">EDA</span><span class="tech-pill">Probability</span></div>
                 </div>
             </div>
         </section>
 
-        <section class="bg-slate-900 text-white p-12 rounded-[2.5rem] shadow-2xl">
-            <h2 class="text-2xl font-black mb-10 border-b border-slate-800 pb-4 uppercase tracking-widest">Specialization</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <p class="text-blue-400 font-black uppercase text-[10px] tracking-[0.2em] mb-2">Advanced Studies</p>
-                    <h3 class="text-xl font-bold">Data Science & Machine Learning</h3>
-                    <p class="text-slate-400">Scaler Academy | 2022 - 2024</p>
+        <section class="mb-16">
+            <span class="section-header">Education & Specialization</span>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900">Advanced DS & ML Specialization</h4>
+                    <p class="text-sm text-slate-600">Scaler Academy | 2022 — 2024</p>
+                    <p class="text-[11px] text-slate-400 mt-2 italic">Focused on advanced algorithms, statistical modeling, and ML system architecture.</p>
                 </div>
-                <div>
-                    <p class="text-blue-400 font-black uppercase text-[10px] tracking-[0.2em] mb-2">Bachelor of Technology</p>
-                    <h3 class="text-xl font-bold">Electronics and Communication</h3>
-                    <p class="text-slate-400">Medi-Caps University | 2018 - 2022</p>
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-slate-900">B.Tech in Electronics & Communication</h4>
+                    <p class="text-sm text-slate-600">Medi-Caps University | 2018 — 2022</p>
                 </div>
+            </div>
+        </section>
+
+        <section class="mt-20 pt-10 border-t border-slate-100">
+            <div class="text-center">
+                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Engineering Philosophy</p>
+                <p class="text-sm text-slate-500 italic max-w-2xl mx-auto leading-loose">
+                    "Resourceful solver specializing in the intersection of Python, GenAI, and Automated Workflows. Focused on navigating technical puzzles—where standard tools reach their limits, I architect custom frameworks to ensure robust project delivery."
+                </p>
             </div>
         </section>
 
     </main>
 
-    <footer class="py-20 text-center text-slate-500 text-sm">
-        <p class="font-bold text-slate-900 mb-1">Nishika Asati</p>
-        <p>Bangalore, KA | nishikaasati@gmail.com</p>
+    <footer class="py-12 text-center text-slate-300 text-[9px] uppercase tracking-[0.3em]">
+        Nishika Asati &copy; 2026 | Professional Data Automation Portfolio
     </footer>
 
 </body>
